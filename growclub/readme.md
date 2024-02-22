@@ -34,8 +34,8 @@ https://gro.club/
 9. Preview the store and should the see the Login Button
 ![login-button](./images/login-button.png)
 
-10. Switch of the toggle in miniOrange App
+10. Switch off the `Display Widget` in miniOrange App, as we have added our own SSO button styling
 ![miniorange-toggle-off](./images/miniorange-toggle-off.png)
 
-11. Uncheck the Captcha option for Login/Register page 
+11. Uncheck the Captcha option for Login/Register page, to avoid users to select captcha while Login into store.
 ![disable-captcha](./images/disable-captcha.png)
