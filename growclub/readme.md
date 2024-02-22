@@ -34,5 +34,8 @@ https://gro.club/
 9. Preview the store and should the see the Login Button
 ![login-button](./images/login-button.png)
 
-10. Uncheck the Captcha option for Login/Register page 
+10. Switch of the toggle in miniOrange App
+![miniorange-toggle-off](./images/miniorange-toggle-off.png)
+
+11. Uncheck the Captcha option for Login/Register page 
 ![disable-captcha](./images/disable-captcha.png)
