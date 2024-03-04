@@ -1,0 +1,78 @@
+[
+    {
+      "sourceField": "$.credentialSubject.email",
+      "idTokenClaim": "$.email",
+      "inputDescriptorId": "email_vc"
+    },
+    {
+      "sourceField": "$.credentialSubject.phoneNumber",
+      "idTokenClaim": "$.phone_number",
+      "inputDescriptorId": "mobile_vc"
+    },
+    {
+      "sourceField": "$.credentialSubject.givenName",
+      "idTokenClaim": "$.given_name",
+      "inputDescriptorId": "givenname_vc"
+    },
+    {
+      "sourceField": "$.credentialSubject.familyName",
+      "idTokenClaim": "$.family_name",
+      "inputDescriptorId": "familyName_vc"
+    },
+    {
+      "sourceField": "$.credentialSubject.nickname",
+      "idTokenClaim": "$.nickname",
+      "inputDescriptorId": "nickname_vc"
+    },
+    {
+      "sourceField": "$.credentialSubject.middleName",
+      "idTokenClaim": "$.middle_name",
+      "inputDescriptorId": "middleName_vc"
+    },
+    {
+      "sourceField": "$.credentialSubject.birthdate",
+      "idTokenClaim": "$.birthdate",
+      "inputDescriptorId": "birthdate_vc"
+    },
+    {
+      "sourceField": "$.credentialSubject.gender",
+      "idTokenClaim": "$.gender",
+      "inputDescriptorId": "gender_vc"
+    },
+    {
+      "sourceField": "$.credentialSubject.picture",
+      "idTokenClaim": "$.picture",
+      "inputDescriptorId": "picture_vc"
+    },
+    {
+      "sourceField": "$.credentialSubject.formatted",
+      "idTokenClaim": "$.address.formatted",
+      "inputDescriptorId": "address_vc"
+    },
+    {
+      "sourceField": "$.credentialSubject.locality",
+      "idTokenClaim": "$.address.locality",
+      "inputDescriptorId": "address_vc"
+    },
+    {
+      "sourceField": "$.credentialSubject.postalCode",
+      "idTokenClaim": "$.address.postal_code",
+      "inputDescriptorId": "address_vc"
+    },
+    {
+      "sourceField": "$.credentialSubject.country",
+      "idTokenClaim": "$.address.country",
+      "inputDescriptorId": "address_vc"
+    },
+    {
+      "sourceField": "$.issuer",
+      "idTokenClaim": "$.custom[0].issuer",
+      "inputDescriptorId": "email_vc"
+    },
+    {
+      "sourceField": "$.credentialSubject.livenessCheckPassed",
+      "idTokenClaim": "$.custom[1].liveness_check_passed",
+      "inputDescriptorId": "liveness_vc"
+    }
+  ]
+  

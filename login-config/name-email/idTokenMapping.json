@@ -1,0 +1,23 @@
+[
+    {
+      "sourceField": "$.credentialSubject.email",
+      "idTokenClaim": "$.email",
+      "inputDescriptorId": "email_vc"
+    },
+    {
+      "sourceField": "$.credentialSubject.givenName",
+      "idTokenClaim": "$.given_name",
+      "inputDescriptorId": "givenname_vc"
+    },
+    {
+      "sourceField": "$.credentialSubject.familyName",
+      "idTokenClaim": "$.family_name",
+      "inputDescriptorId": "familyName_vc"
+    },
+    {
+      "sourceField": "$.issuer",
+      "idTokenClaim": "$.custom[0].issuer",
+      "inputDescriptorId": "email_vc"
+    }
+  ]
+  
