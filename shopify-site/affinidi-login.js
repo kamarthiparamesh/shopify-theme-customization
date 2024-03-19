@@ -8,7 +8,7 @@ function InitAffinidiLoginUI() {
     </div>
   </div>`;
 
-  //   html += `<p style="margin:2rem;font-size:20px;text-align:center;">
+  // html += `<p style="margin:2rem;font-size:20px;text-align:center;">
   //   <b id="subtextArea">Or</b>
   // </p>`
 
