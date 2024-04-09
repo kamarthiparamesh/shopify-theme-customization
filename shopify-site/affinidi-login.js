@@ -13,13 +13,28 @@ function InitAffinidiLoginUI() {
   // </p>`
 
   var blocks = document.querySelectorAll('#password-modal-heading,.account-register-title,#customer_login_box,#customer_login,#customer_loginlogin-sidebar,#customer_createlogin-sidebar,#create_customer');
+  console.log('blocks length', blocks.length);
 
-  blocks.forEach(block => {
-    var div = document.createElement('div');
-    div.innerHTML = html;
-    block.prepend(div);
-  });
-
+  //if no login form elements found yet 
+  if (blocks.length == 0) {
+    // atleast try adding login button on click of the account menu icon 
+    var acc_icon = document.querySelector('[href="/account"]')
+    if (acc_icon) {
+      acc_icon.addEventListener("click", function (event) {
+        console.log('blocks clicked');
+        InitAffinidiLoginUI();
+      }, {
+        once: true
+      });
+    }
+  } else {
+    // login elements found so inject login button
+    blocks.forEach(block => {
+      var div = document.createElement('div');
+      div.innerHTML = html;
+      block.prepend(div);
+    });
+  }
 
 }
 
@@ -44,12 +59,10 @@ function Login_Click() {
 
   location.href = "https://store.xecurify.com/moas/broker/login/shopify/" + shop_name + "/account?redirect_endpoint=" + checkout_url;
 
-
 }
 
 document.addEventListener("DOMContentLoaded", function (event) {
   InitAffinidiLoginUI();
-
 });
 
 
