@@ -1,5 +1,11 @@
 
 function InitAffinidiLoginUI() {
+  var loginBtn = document.getElementById('MOmyHeader');
+  if (loginBtn) {
+    console.log('Login button already exists');
+    return;
+  }
+
   var html = `<div class="MOheader" id="MOmyHeader">
     <div class="affinidi-login-div">
       <button class="affinidi-login" onclick="Login_Click()">
@@ -13,7 +19,7 @@ function InitAffinidiLoginUI() {
   // </p>`
 
   var blocks = document.querySelectorAll('#password-modal-heading,.account-register-title,#customer_login_box,#customer_login,#customer_loginlogin-sidebar,#customer_createlogin-sidebar,#create_customer');
-  console.log('blocks length', blocks.length);
+  console.log('login form elements length', blocks.length);
 
   //if no login form elements found yet 
   if (blocks.length == 0) {
@@ -21,7 +27,7 @@ function InitAffinidiLoginUI() {
     var acc_icon = document.querySelector('[href="/account"]')
     if (acc_icon) {
       acc_icon.addEventListener("click", function (event) {
-        console.log('blocks clicked');
+        console.log('login sidebar menu icon clicked');
         InitAffinidiLoginUI();
       }, {
         once: true
