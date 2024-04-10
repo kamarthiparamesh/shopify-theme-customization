@@ -23,16 +23,7 @@ function InitAffinidiLoginUI() {
 
   //if no login form elements found yet 
   if (blocks.length == 0) {
-    // atleast try adding login button on click of the account menu icon 
-    var acc_icon = document.querySelector('[href="/account"]')
-    if (acc_icon) {
-      acc_icon.addEventListener("click", function (event) {
-        console.log('login sidebar menu icon clicked');
-        InitAffinidiLoginUI();
-      }, {
-        once: true
-      });
-    }
+    console.log('no login form elements found');
   } else {
     // login elements found so inject login button
     blocks.forEach(block => {
